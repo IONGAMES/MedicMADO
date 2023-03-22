@@ -160,7 +160,8 @@ class LoginActivity : ComponentActivity() {
                     text = "Или войдите с помощью",
                     fontSize = 15.sp,
                     color = descriptionColor,
-                    textAlign = TextAlign.Center
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 AppButton(
