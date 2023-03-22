@@ -139,7 +139,7 @@ class LoginActivity : ComponentActivity() {
                 enabled = isEnabled,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                if (Regex("^[a-zA-Z0-9]*@[a-zA-Z0-9]*.[a-zA-Z]{2,}$").matches(emailText)) {
+                if (Regex("^[a-zA-Z0-9]*@[a-zA-Z0-9]*\\.[a-zA-Z]{2,}$").matches(emailText)) {
                     viewModel.sendEmailCode(emailText)
 
                     isLoading = true
