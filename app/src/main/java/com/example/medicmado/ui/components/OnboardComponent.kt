@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.medicmado.ui.theme.descriptionColor
@@ -25,6 +26,7 @@ fun OnboardComponent(
     ) {
         Text(
             text = title,
+            fontWeight = FontWeight.W600,
             color = onboardTitleColor,
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth()

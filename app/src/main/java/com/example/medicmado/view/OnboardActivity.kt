@@ -89,7 +89,7 @@ class OnboardActivity : ComponentActivity() {
         Box(modifier = Modifier.fillMaxSize()) {
             Column(
                 verticalArrangement = Arrangement.SpaceBetween,
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier.fillMaxSize().padding(top = 5.dp)
             ) {
                 Row(
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -111,7 +111,7 @@ class OnboardActivity : ComponentActivity() {
                         }
                     )
                     Image(
-                        painter = painterResource(id = com.example.medicmado.R.drawable.ic_shape_2),
+                        painter = painterResource(id = R.drawable.ic_shape_2),
                         contentDescription = ""
                     )
                 }
